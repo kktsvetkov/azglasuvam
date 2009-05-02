@@ -9,7 +9,7 @@ Class az_glasuvam {
 
 	/**
 	*/
-	var $version = '$Rev$';
+	var $version = '$Id$';
 
 	/**
 	* Constructor
