@@ -15,7 +15,12 @@ Class az_glasuvam {
 	* Constructor
 	*/
 	Function az_glasuvam() {
-		;
+		if (is_admin()) {
+			$version = get_option('az_glasuvam_revision');
+			if (!$version || version_compare($version, intval($this->version), '>') ) {
+				$this->install();
+				}
+			}
 		} 
 
 	/**
@@ -29,3 +34,10 @@ Class az_glasuvam {
 	
 	////--end-of-class
 	}
+
+/////////////////////////////////////////////////////////////////////////////
+
+/**
+*
+*/
+$az_glasuvam = new az_glasuvam();
