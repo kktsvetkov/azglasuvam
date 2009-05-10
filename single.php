@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+﻿<!-- <?php get_header('2columns'); ?>
+
+	
 
 	<div id="content" class="widecolumn">
 
@@ -53,7 +55,7 @@
 			</div>
 		</div>
 
-	<?php comments_template(); ?>
+	
 
 	<?php endwhile; else: ?>
 
@@ -63,4 +65,4 @@
 
 	</div>
 
-<?php get_footer(); ?>
+<?php get_footer('2columns'); ?>
