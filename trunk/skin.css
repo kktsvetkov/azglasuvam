@@ -1,106 +1,465 @@
-/*
-Theme name: WordPress Default - kubrick -
-Editors: Navid Kashani
-Persian Wordpress Project : wp-persian.com
-*/
-body, .commentlist li, #commentform input, #commentform textarea, #commentform p, #sidebar, #wp-calendar caption  {
-	font-family:tahoma, arial;
-}
-#page {
-	text-align:right;
-	direction:rtl;
-}
-h1, h2, h3, #sidebar h2 {
-	font-family:arial, tahoma;
-}
-.commentlist li .avatar {
-	float:left;
-}
+/* common */
+body {
+	background: black;
+	padding: 0;
+	margin: 0;
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+h1,h2,h3,h4,h5,h6 {
+	padding: 0;
+	margin: 0;
+	}
+p {	padding: 0;
+	margin: 0;
+	}
+a img {	border: 0;
+	}
+
+#outter {
+	background: white;
+	padding-top: 10px;
+	}
+#inner {
+	width: 960px;
+	margin: 0 auto;
+	background: white;
+	}
+#void {
+	background: black;
+	height: 4px;
+	}
+
+/* header */
 #header {
-	margin:0 1px 0 0;
-}
-.narrowcolumn {
-	float:right;
-	padding: 0 45px 20px 0;
-}
-.widecolumn {
-	margin: 5px 150px 0 0;
-}
-.widecolumn .smallattachment {
-	margin: 5px 0 5px 5px;
-}
-.postmetadata {
-	clear:right;
-}
-#sidebar {
-	margin-left: 0;
-	margin-right: 545px;
-}
-img.alignright {
-	margin: 0 7px 2px 0;
-}
+	/*
+	border-top: solid 3px black;
+	border-bottom: solid 3px black;
+	*/
+	margin-bottom: 15px;	
+	margin-top: 5px;
+	}
+	
+	#header h1 a {
+		display: block;
+		height: 78px;
+		line-height: 1000px;
+		background: white url(3.png) no-repeat;
+		overflow: hidden;
+		font-size: 10px;
+		}
 
-img.alignleft {
-	margin: 0 0 2px 7px;
-}
+/* footer */
+#footer {
+	margin: 15px 0 0px;
+	padding: 30px 0 17px 0;
+	border-top: solid 3px #444;
+	font-size: 11px;
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	cursor: default;
+	}
+	
+	#footer ul.top {
+		padding: 0;
+		margin: 0;
+		display: block;
+		font-size: 12px;
+		font-family: arial;
+		}
+		
+		#footer ul.top li {
+			display: inline;
+			padding: 0;
+			margin: 0;
+			}
+			
+			#footer ul.top li a {
+				margin-right: 8px;
+				color: #555;
+				text-decoration: none;
+				padding-left: 6px;
+				background: url(1.png) no-repeat center left;
+				}
+				
+			#footer ul.top li a:hover {
+				color: black;
+				background-image: url(2.png);
+				}
 
-.alignright {
-	float: left;
-}
+	#footer ul.middle {
+		border-top: solid 1px #ddd;
+		margin: 3px 0 0;
+		padding: 3px 0 0;
+		text-align: left;
+		}
 
-.alignleft {
-	float: right;
-}
-code {
-	display:block;
-	direction:ltr;
-	text-align:left;
-}
-acronym, abbr, span.caps {
-	letter-spacing:0; /* fix opera bug */
-}
-html>body .entry ul {
-	padding:0 10px 0 0;
-	text-indent:10px;
-}
-html>body .entry li {
-	margin: 7px 10px 8px 0;
-}
-.entry ol {
-	padding: 0 35px 0 0;
-}
-#sidebar ul ul, #sidebar ul ol {
-	margin: 5px 10px 0 0;
-}
-#sidebar ul ul ul, #sidebar ul ol {
-	margin: 0 10px 0 0;
-}
-#commentform input {
-	margin: 5px 0 1px 5px;
-}
-#commentform #submit {
-	float:left;
-}
-.commentlist p {
-	margin: 10px 0 10px 5px;
-}
-#wp-calendar #next a {
-	padding-right:0;
-	padding-left:10px;
-	text-align:left;
-}
-#wp-calendar #prev a {
-	padding-left:0;
-	padding-right:10px;
-	text-align:right;
-}
-blockquote {
-	margin: 15px 10px 0 30px;
-	padding-left: 0;
-	padding-right: 20px;
-	border-left: 0 none;
-	border-right: 5px solid #ddd;
-}
-#email, #url {
-	direction:ltr;
-}
+		#footer ul.middle li {
+			display: inline;
+			padding: 0;
+			margin: 0;
+			}
+			
+			#footer ul.middle li a {
+				margin-right: 8px;
+				color: #777;
+				text-decoration: none;
+				padding-left: 6px;
+				background: url(1.png) no-repeat center left;
+				}
+
+			#footer ul.middle li a:hover {
+				color: black;
+				background-image: url(2.png);
+				}
+
+	#footer p.copyright {
+		color: #bbb;
+		float: right;
+		padding: 7px 0 0 0px;
+		width: 471px;
+		line-height: 1.125em;
+		}
+		
+		#footer p.copyright a {
+			color: #aaa;
+			}
+			
+		#footer p.copyright a:hover {
+			color: black;
+			}
+		
+		#footer p.copyright a.license {
+			float:right;
+			padding: 2px 0 0 6px ;
+			}
+
+	#footer ul.bottom {
+		margin: 40px 0 0;
+		padding: 3px 0 0;
+		text-align: left;
+		color: #555;
+		}
+
+		#footer ul.bottom li {
+			display: inline;
+			padding: 0 2px 0 4px;
+			margin: 0 ;
+			border-left: solid 1px #aaa;
+			}
+			
+		#footer ul.bottom li.first {
+			padding-left: 0;
+			border: 0;
+			}
+			
+			#footer ul.bottom li a {
+				color: black;
+				}
+
+			#footer ul.bottom li a:hover {
+				color: #666;
+				}
+
+/* content */
+#content {
+	margin-bottom: 30px;
+	}
+
+/* project */
+table.project {
+	width: 100%;
+	background: #3a443a;
+	color: white;
+	margin-bottom: 15px;
+	}
+
+	table.project th ,
+	table.project td {
+		padding: 4em 0 4em 4em;
+		text-align: left;
+		vertical-align: middle;
+		}
+
+	table.project td {
+		padding: 4em 4em 4em 0;
+		}
+
+	.project img.prochetime {
+		vertical-align: middle;
+		}
+	
+	.project a.poslania {
+		color: black;
+		display: block;
+		cursor: pointer;
+		height:35px;
+		width:260px;
+
+		margin: 0 auto;
+	
+		font-size: 9px;
+		line-height: 1000px;
+		overflow: hidden;
+		background: white url(8.png) no-repeat bottom left;
+		}
+	.project a.poslania:hover {
+		background-position: top left;
+		}
+	
+/* rotator */
+#rotator {
+	__display: none;
+	}
+		
+/* poweche */
+table.poveche {
+	width: 100%;
+	font-size: 12px;
+	font-family: Helvetica,Arial,Sans-Serif;
+	cursor: default;
+	margin-top: 5px;
+	}
+	
+	table.poveche td {
+		width: 38%;
+		vertical-align: top;
+		padding-left: 32px;
+		}
+
+	table.poveche td.first {
+		width: 24%;
+		padding-left: 0px;
+		}
+
+		table.poveche td p {
+			color: #444;
+			}
+
+		table.poveche td h4 {
+			text-transform: uppercase;
+			border-bottom: solid 3px #444;
+			font-size: 14px;
+			letter-spacing: -1px;
+			padding-bottom: 1px;
+			margin-bottom: 4px;
+			
+			height: 18px;
+			overflow: hidden;
+			line-height:1000px;
+			}
+			
+			table.poveche td h4#za_proekta {
+				background: white url(4.png) no-repeat;
+				}
+
+			table.poveche td h4#sledete_kakvo_stava {
+				background: white url(5.png) no-repeat;
+				}
+
+			table.poveche td h4#podkrepete_proekta {
+				background: white url(6.png) no-repeat;
+				}
+
+			table.poveche td h4#uchastvajte_v_proekta {
+				background: white url(7.png) no-repeat;
+				}
+
+
+		table.poveche td h5 {
+			margin: 25px 0 0px;
+			font-size: 12px;
+			}
+
+		table.poveche td ul {
+			margin: 5px 0 5px 10px;
+			padding: 0;
+			display: block;
+			}
+			
+			table.poveche td ul li {
+				list-style-type: none;
+				display: block
+				font-size: 11px;
+				font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+				}
+				
+				table.poveche td ul li a {
+					text-decoration: none;
+					color: #778888;
+					padding-left: 6px;
+					background: url(1.png) no-repeat center left;
+					text-transform: uppercase;
+					font-size:10px;
+					}
+
+				table.poveche td ul li a:hover {
+					color: black;
+					background-image: url(2.png);
+					}
+					
+				table.poveche td ul.normal li a {
+					text-transform: none;
+					font-size: 11px;
+					}
+
+		table.poveche td h4.blog {
+			margin-top: 25px;
+			}
+
+		table.poveche td ul.blog {
+			margin: 10px 0 0 10px;
+			padding: 0 0 0 10px;
+			}
+			
+			table.poveche td ul.blog li {
+				list-style-type: disc;
+				display: list-item;
+				font-family: Helvetica,Arial,Sans-Serif;
+				font-size: 13px;
+				}
+				
+				table.poveche td ul.blog li a {
+					background: none;
+					padding-left: 0;
+					text-transform: none;
+					font-size: inherit;
+					color:#667788;
+					}
+				table.poveche td ul.blog li a:hover {
+					color: black;
+					}
+/* 2columns: regular pages */
+#two-columns-header {
+	background: #3a443a;
+	margin: 0 0 20px 0;
+	padding: 50px 22px;
+	}
+
+	#two-columns-header h2,
+	#two-columns-header h6 {
+		display: none;
+		}
+
+table.two-columns {
+	width: 100%;
+	}
+
+	table.two-columns td {
+		padding: 0;
+		vertical-align: top;
+		padding-right: 5px;
+		}
+	
+	table.two-columns td.sidebar {
+		width: 10%;
+		padding: 0;
+		padding-left: 10px;
+		}
+		
+		table.two-columns td.sidebar #sidebar {
+			width: 250px;
+			}
+			
+			table.two-columns td.sidebar #sidebar .block {
+				background: #dfdfdf;
+				margin: 0;
+				padding: 7px 0 0 0;
+				margin-bottom: 20px;
+				font-family: Helvetica,Arial,Sans-Serif;
+				line-height: 14px;
+				color: #555;
+				font-size: 12px;
+				cursor: pointer;
+				}
+				
+				table.two-columns td.sidebar #sidebar .block h4 {
+					height: 18px;
+					overflow: hidden;
+					line-height:1000px;
+					font-size: 10px;
+					padding: 0;
+					margin: 0 0 3px 9px;
+					}
+
+				table.two-columns td.sidebar #sidebar .block h4#za_proekta {
+					background: url(10.png) no-repeat;
+					}
+	
+				table.two-columns td.sidebar #sidebar .block h4#sledete_kakvo_stava {
+					background: url(13.png) no-repeat;
+					}
+	
+				table.two-columns td.sidebar #sidebar .block h4#podkrepete_proekta {
+					background: url(11.png) no-repeat;
+					}
+	
+				table.two-columns td.sidebar #sidebar .block h4#uchastvajte_v_proekta {
+					background: url(12.png) no-repeat;
+					}
+
+				table.two-columns td.sidebar #sidebar .block h4#posledno_v_bloga {
+					background: url(14.png) no-repeat;
+					}
+	
+				table.two-columns td.sidebar #sidebar .block h4#blog_arhiv {
+					background: url(15.png) no-repeat;
+					}
+
+			table.two-columns td.sidebar #sidebar .block p {
+				padding: 2px 5px 6px 8px;
+				}
+				
+			table.two-columns td.sidebar #sidebar .block ul {
+				padding: 5px 0 5px 10px;
+				margin: 0;
+				display: block;
+				background: #404040;
+				}
+				
+				table.two-columns td.sidebar #sidebar .block li {
+					list-style-type: none;
+					display: block
+					font-size: 10px;
+					font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+					}
+					
+					table.two-columns td.sidebar #sidebar .block a {
+						text-decoration: none;
+						color: #aaa;
+						padding-left: 6px;
+						background: url(16.png) no-repeat center left;
+						text-transform: uppercase;
+						font-size:10px;
+						font-weight: bold;
+						}
+	
+					table.two-columns td.sidebar #sidebar .block a:hover {
+						color: white;
+						background-image: url(16.png);
+						}
+/* page and blog content */
+div.lead {
+	visibility: hidden;
+	position: absolute;
+	}
+div.post {
+	font-family: Helvetica,Arial,Sans-Serif;
+	font-size: 14px;
+	line-height: 18px;
+	margin-right: 20px;
+	cursor: default;
+	}
+
+	div.post p {
+		margin: 0 0 14px 0;
+		padding: 0;
+		color: #333;
+		}
+		
+	div.post h3 {
+		color: #a0a0a0;
+		font-size: 24px;
+		letter-spacing: -1px;
+		font-weight: normal;
+		margin: 0 0 14px 0;
+		padding: 10px 0 0;
+		}

@@ -1,21 +1,17 @@
-<?php get_header(); ?>
+<!-- <?php get_header('2columns');
 
-	<div id="content" class="narrowcolumn">
+while (have_posts()) : the_post(); ?>
 
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div class="post" id="post-<?php the_ID(); ?>">
+	<div class="lead">
+		<img src="<?php bloginfo('stylesheet_directory'); ?>/2columns-<?php the_ID(); ?>.gif" />
 		<h2><?php the_title(); ?></h2>
-			<div class="entry">
-				<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
-
-				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-
-			</div>
-		</div>
-		<?php endwhile; endif; ?>
-	<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+		<h6><?php the_excerpt(); ?></h6>
 	</div>
 
-<?php get_sidebar(); ?>
+	<div class="post"><?php the_content(); ?></div>
 
-<?php get_footer(); ?>
+<?php endwhile;
+
+edit_post_link('Edit this entry.', '<p>', '</p>');
+	
+get_footer('2columns'); ?>
