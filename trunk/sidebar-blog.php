@@ -2,11 +2,39 @@
 	<div id="sidebar">
 
 		<div class="block">
+			<h4 id="posledno_v_bloga">Последно в блога</h4>
+
+			<p>Разгледайте последното и най-новото около събитията и новинита за проекта.</p>
+
+			<ul>
+			<?php global $az_glasuvam; $wp_query = new WP_Query('posts_per_page=10'); while (have_posts()) : the_post(); ?>
+				<li>
+				<a href="<?php the_permalink(); ?>" rel="bookmark"
+						title="<?php printf(__('Permanent Link to %s', 'kubrick'), $t = the_title_attribute('echo=0')); ?>">
+					<?php echo $az_glasuvam->utf8_truncate($t, 32); ?></a>
+				</li>
+			<?php endwhile; ?>
+			</ul>
+
+		</div>
+
+		<div class="block">
+			<h4 id="blog_arhiv">Архив</h4>
+
+			<p>Прелистете хронологичния архив на публикуваното в блога на &#8220;Аз Гласувам!&#8221;</p>
+
+			<ul>
+				<?php wp_get_archives('type=monthly'); ?>
+			</ul>
+
+		</div>
+
+		<div class="block">
 			<h4 id="za_proekta">За проекта</h4>
 
-			<p>Celta na proekta e da nasyrchi glasuwaneto na predstoiaschtite
-			izobori za evroparlament i za nacionalen parlament. Do momenta
-			ima sybrani 32 poslania...</p>
+			<p>Научете повече за идеите и целите на проекта за
+			насърчаване на гласуването на предстоящите парламентарни избори
+			и избори за европейски парламент.</p>
 
 			<ul>
 				<li><a href="#">научете повече&hellip;</a></li>
@@ -23,7 +51,7 @@
 			ето няколко различни начина да го направите: може да поставите
 			специален код на сайта ви който представя посланията, може да
 			сложете банер или значка на вашия блог, или просто може да
-			публикувате връзка към "Аз Гласувам!".</p>
+			публикувате връзка към &#8220;Аз Гласувам!&#8221;.</p>
 
 			<ul>
 				<li><a href="#">HTML код за посланията</a></li>
@@ -61,23 +89,5 @@
 				
 			</ul>
 		</div>
-
-		<div class="block">
-			<h4 id="posledno_v_bloga">Последно в блога</h4>
-
-			<p>Разгледайте последното и най-новото около събитията и новинита за проекта.</p>
-
-			<ul>
-			<?php global $az_glasuvam; $wp_query = new WP_Query('posts_per_page=10'); while (have_posts()) : the_post(); ?>
-				<li>
-				<a href="<?php the_permalink(); ?>" rel="bookmark"
-						title="<?php printf(__('Permanent Link to %s', 'kubrick'), $t = the_title_attribute('echo=0')); ?>">
-					<?php echo $az_glasuvam->utf8_truncate($t, 32); ?></a>
-				</li>
-			<?php endwhile; ?>
-			</ul>
-
-		</div>
-
 
 	</div>

@@ -361,6 +361,7 @@ table.two-columns {
 			
 			table.two-columns td.sidebar #sidebar .block {
 				background: #dfdfdf;
+				background-color: #d7d7d0;
 				margin: 0;
 				padding: 7px 0 0 0;
 				margin-bottom: 20px;
@@ -405,7 +406,7 @@ table.two-columns {
 					}
 
 			table.two-columns td.sidebar #sidebar .block p {
-				padding: 2px 5px 6px 8px;
+				padding: 2px 5px 8px 8px;
 				}
 				
 			table.two-columns td.sidebar #sidebar .block ul {
@@ -447,19 +448,190 @@ div.post {
 	line-height: 18px;
 	margin-right: 20px;
 	cursor: default;
+	color: #555;
 	}
 
 	div.post p {
 		margin: 0 0 14px 0;
 		padding: 0;
-		color: #333;
 		}
 		
 	div.post h3 {
-		color: #a0a0a0;
+		color: #98a098;
 		font-size: 24px;
 		letter-spacing: -1px;
 		font-weight: normal;
 		margin: 0 0 14px 0;
 		padding: 10px 0 0;
 		}
+
+	div.post a {
+		color: #3a443a;
+		}
+	div.post a:hover {
+		color: black;
+		background: #eaf0ea;
+		}
+		
+	div.post div.meta {
+		margin: 5px 0 11px;
+		color: black;
+		font-size: 11px;
+		font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+		}
+		
+	div.post div.entry {
+		margin-bottom: 50px;
+		width: 670px;
+		}
+		
+	div.post h2.title {
+		font-weight: normal;
+		line-height: 26px;
+		margin-top: 5px;
+		}
+		
+		div.post h2.title a {
+			background: transparent;
+			text-decoration: none;
+			font-size: 32px;
+			letter-spacing: -1px;
+			
+			font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+			color: #112211;
+			}
+		div.post h2.title a:hover {
+			background: transparent;
+			color:#556655;
+			}
+
+/* Navigation */
+.navigation {
+	margin: 0;
+	}
+
+.navtop {
+	margin-bottom: 3em;
+	}
+	
+	.navigation .pagination {
+		display: block;
+		padding: 0.25em 0 0.4em;
+		text-align: center;
+		background: #334433;
+		color: white;
+		}
+
+	* html .navigation .pagination {
+		padding-top: 0.9em;
+		}
+	
+	html>body* .navigation .pagination {
+		padding-top: 0.6em;
+		}
+	
+		.navigation .pagination .pages {
+			padding: 0px 5px;
+			margin: 0px 5px;
+			border: solid 1px white;
+			border-width: 0px 1px;
+			}
+			
+			.navigation .pagination .pages .island {
+				padding: 0px 3px;
+				}
+	
+		.navigation .pagination a {
+			color: white;
+			font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 0px 2px;
+			}
+	
+		html>body* .navigation .pagination a {
+			font-size: 15px;
+			}
+	
+		.navigation .pagination a:hover {
+			text-decoration: underline;
+			cursor: pointer;
+			}
+	
+		.navigation .pagination a.selected {
+			font-weight: bold;
+			font-size: 21px;
+			position: relative;
+			top: 2px;
+			color: white;
+			}
+		
+		* html .navigation .pagination a.selected {
+			position: static;
+			font-size: 17px;
+			text-decoration: underline;
+			}
+			
+		.navigation .pagination a.selected:hover {
+			text-decoration: none;
+			cursor: pointer;
+			}
+			
+		.navigation .pagination a.disabled:hover {
+			text-decoration: none;
+			cursor: default;
+			}
+
+	.navigation hr {
+		display: none;
+		}
+
+	.navtop hr {
+		display: block;
+		margin: 0;
+		padding: 0;
+		height: 1px;
+		border: solid 1px white;
+		color: white;
+		background: white;
+		border-top-color: #ddd;
+		}
+		
+/* comments */
+ol.commentlist li div.author {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: black;
+	size: 10px;
+	}
+	
+	ol.commentlist li div.author b {
+		size: 12px;
+		}
+	
+ol.commentlist li img.avatar {
+	vertical-align: middle;
+	}
+	
+#submit {
+	padding: 5px 27px;
+	border-width: 1px;
+	cursor: pointer;
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-size: 14px;
+	font-weight: bold;
+	}
+	
+/* archive */
+h2.pagetitle {
+	margin: 0 0 10px;
+	padding: 50px 0;
+	width: 685px;
+	text-align: center;
+	cursor: default;
+	font-weight: normal;
+	font-size: 39px;
+	background: black;
+	color:white;
+	font-family: Georgia;
+	letter-spacing: -1px;
+	}

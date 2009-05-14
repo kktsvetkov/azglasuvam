@@ -62,7 +62,7 @@
 					<ul>
 						<li><a href="#">научете повече&hellip;</a></li>
 						<li><a href="#">вижте всички послания</a></li>
-						<li><a href="#">разгледайте блога</a></li>
+						<li><a href="/blog/">разгледайте блога</a></li>
 					</ul>
 					
 					<h4 id="sledete_kakvo_stava" class="blog">Следете какво става</h4>

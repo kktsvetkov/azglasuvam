@@ -1,68 +1,43 @@
-﻿<!-- <?php get_header('2columns'); ?>
-
-	
-
-	<div id="content" class="widecolumn">
+﻿<!-- <?php get_header('blog'); ?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<div class="navigation">
-			<div class="alignleft"><?php previous_post_link('&laquo; %link') ?></div>
-			<div class="alignright"><?php next_post_link('%link &raquo;') ?></div>
-		</div>
+		<div class="post">
+			<h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark"
+				title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php
+					the_title(); ?></a></h2>
 
-		<div class="post" id="post-<?php the_ID(); ?>">
-			<h2><?php the_title(); ?></h2>
+			<div class="meta">
+				
+				<?php edit_post_link('edit'); ?>
+				
+				публикувано на <?php the_time(__('j F Y', 'kubrick')) ?> |
+				
+				<?php
+					the_tags('етикети ', ', ', ' | ');
+					
+					echo '<a href="#respond">',
+						($_ = get_comments_number( $id ))
+							? ($_ == 1 ? 'един коментар' : "{$_} коментара")
+							: 'няма коментари',
+						'</a> (';
 
-			<div class="entry">
-				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
-
-				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-				<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
-
-				<p class="postmetadata alt">
-					<small>
-						This entry was posted
-						<?php /* This is commented, because it requires a little adjusting sometimes.
-							You'll need to download this plugin, and follow the instructions:
-							http://binarybonsai.com/archives/2004/08/17/time-since-plugin/ */
-							/* $entry_datetime = abs(strtotime($post->post_date) - (60*120)); echo time_since($entry_datetime); echo ' ago'; */ ?>
-						on <?php the_time('l, F jS, Y') ?> at <?php the_time() ?>
-						and is filed under <?php the_category(', ') ?>.
-						You can follow any responses to this entry through the <?php post_comments_feed_link('RSS 2.0'); ?> feed.
-
-						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-							// Both Comments and Pings are open ?>
-							You can <a href="#respond">leave a response</a>, or <a href="<?php trackback_url(); ?>" rel="trackback">trackback</a> from your own site.
-
-						<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-							// Only Pings are Open ?>
-							Responses are currently closed, but you can <a href="<?php trackback_url(); ?> " rel="trackback">trackback</a> from your own site.
-
-						<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-							// Comments are open, Pings are not ?>
-							You can skip to the end and leave a response. Pinging is currently not allowed.
-
-						<?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-							// Neither Comments, nor Pings are open ?>
-							Both comments and pings are currently closed.
-
-						<?php } edit_post_link('Edit this entry','','.'); ?>
-
-					</small>
-				</p>
+					post_comments_feed_link('rss'); ?>) |
+					<a href="<?php trackback_url(); ?>" rel="trackback">trackback</a>
 
 			</div>
+
+			<div class="entry" style="margin-bottom: 0;">
+
+				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
+			</div>
+			
+			<?php comments_template(); ?>
+			
 		</div>
 
-	
+	<?php endwhile; else:
+	wp_redirect(get_option('home'));
+	endif;
 
-	<?php endwhile; else: ?>
-
-		<p>Sorry, no posts matched your criteria.</p>
-
-<?php endif; ?>
-
-	</div>
-
-<?php get_footer('2columns'); ?>
+get_footer('blog');
