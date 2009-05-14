@@ -6,7 +6,7 @@
 		<ul class="top">
 			<li><a href="#">Начало</a></li>
 			<li><a href="#">За проекта</a></li>
-			<li><a href="#">Блог</a></li>
+			<li><a href="/blog/">Блог</a></li>
 			<li><a href="#">Twitter</a></li>
 			<li><a href="#">Facebook</a></li>
 		</ul>

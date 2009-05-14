@@ -11,9 +11,11 @@
 <script type="text/javascript">
 <!--//
 jQuery(document).ready(function() {
-	
 	jQuery('#two-columns-header').html(
 		jQuery('div.lead').html()
+		);
+	jQuery('#two-columns-header img').attr('alt',
+		jQuery('div.lead h2').text() + ': ' + jQuery('div.lead h6').text()
 		);
 	});
 //-->
