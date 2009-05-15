@@ -50,8 +50,6 @@ Class az_glasuvam {
 			if (!$version || version_compare($version, intval($this->version), '>') ) {
 				$this->install();
 				}
-			} else {
-			add_thickbox(); /* ... */
 			}
 		
 		// add plugin hooks

@@ -50,7 +50,7 @@ function poslanie(where) {
 	
 	jQuery.get('<?php echo get_option('home'); ?>/?page_id=' + poslania[target -1], {},
 		function(html){
-			jQuery('#inject').html(html);
+			jQuery('#inject').html('<!-- ' + html);
 			loading = false;
 			});
 	}

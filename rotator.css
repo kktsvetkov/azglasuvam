@@ -67,7 +67,8 @@ div.az_glasuvam_hide {
 	}
 
 	div.az_glasuvam_hide .azglasuvam_hide {
-		padding-top: 8px;
+		padding-top: 11px;
+		padding-left: 3px
 		}
 	
 	div.az_glasuvam_hide span.stamp {
@@ -98,7 +99,7 @@ div.az_glasuvam_hide {
 		font-size: 11px;
 		position: relative;
 		top: -2px;
-		left: 1px;
+		left: 3px;
 		color: #ccc;
 		}
 
@@ -181,7 +182,7 @@ div.rotator {
 	.rotator .author div.details {
 		padding: 0;
 		margin: 0;
-		margin-top: 11px;
+		margin-top: 13px;
 		color: black;
 		font-style: italic;
 		font-size: 17px;
@@ -211,7 +212,6 @@ div.rotator {
 		color: #666;
 		font-size: 15px;
 		line-height: 1.125em;
-		letter-spacing: -1px;
 		cursor: default;
 		font-family: Arial, 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
 		}
