@@ -5,7 +5,8 @@ body.loading {
 	}
 	
 .loading div.loading {
-	height: 474px;
+	/* height: 474px; */
+	height: 444px;
 	/* width: 714px; */
 	line-height:470px;
 	text-align: center;

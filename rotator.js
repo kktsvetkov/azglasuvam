@@ -95,8 +95,19 @@ jQuery(document).ready(function() {
 	r_modal = jQuery.modal('<iframe src="http://az-glasuvam.com.projects.ibm.kaloyan.info/wp-content/themes/az-glasuvam.com/rotator.html" '
 			+ ' x_src="http://' + r_host + '/?page_id=13" '
 		+ ' marginheight="0" marginwidth="0" border="0" frameborder="0" '
-		+ ' width="720" height="480" style="width:720px;height:480px;"><\/iframe>'
-			+ '<div class="az_glasuvam_hide">1<\/div>',
+		+ ' width="720" height="444" style="width:720px;height:444px;"><\/iframe>'
+			+ '<div class="az_glasuvam_hide"> <span class="stamp">'
+			+ ' <a href="http://az-glasuvam.com" target="_top" title="&#1040;&#1079; '
+				+ ' &#1043;&#1083;&#1072;&#1089;&#1091;&#1074;&#1072;&#1084;! '
+				+ ' &#1048;&#1079;&#1073;&#1086;&#1088;&#1080; 2009">'
+			+ ' <img src="http://az-glasuvam.com.projects.ibm.kaloyan.info/wp-content/themes/az-glasuvam.com/a.gif" \></a>'
+			+ ' </span>'
+			+ ' <div class="azglasuvam_hide"><input onchange="jQuery.cookie(\'az_glasuvam\', this.checked ? 1 : null);" id="azglasuvam_hide" type="checkbox"><label for="azglasuvam_hide">'
+				+ '&#1053;&#1077; &#1078;&#1077;&#1083;&#1072;&#1103; &#1076;&#1072; '
+				+ ' &#1074;&#1080;&#1078;&#1076;&#1072;&#1084; &#1087;&#1086;&#1074;&#1077;&#1095;&#1077; '
+				+ ' &#1087;&#1086;&#1089;&#1083;&#1072;&#1085;&#1080;&#1103; '
+				+ ' &#1086;&#1090; "&#1040;&#1079; &#1043;&#1083;&#1072;&#1089;&#1091;&#1074;&#1072;&#1084;!"</label>'
+			+ '<\/div> <\/div>',
 		{"close":true, "closeHTML": '<a class="modalCloseImg" title="&#1079;&#1072;&#1090;&#1074;&#1086;&#1088;&#1080;"></a>'});
 
 	if (jQuery.browser.mozilla) {

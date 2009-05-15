@@ -9,7 +9,11 @@ body {
 /* Overlay */
 #simplemodal-overlay {
 	background: black url(r.png) no-repeat bottom right;
-	cursor:wait;
+	cursor:default;
+	}
+
+* html #simplemodal-overlay {
+	background: black url(r.jpg) no-repeat top left;
 	}
 
 /* Container */
@@ -19,13 +23,9 @@ body {
 	background-color:#fff;
 	border:3px solid #ccc;
 	
-/* height:480px; */ height:444px;
+height:480px;
 width: 720px;
-
 	}
-
-#simplemodal-container #basicModalContent {padding:8px; background: red}
-
 	
 #simplemodal-container iframe {
 	background: white url(i.gif) no-repeat center center;
@@ -62,13 +62,12 @@ div.az_glasuvam_hide {
 	color: #ddd;
 	background: gray ;
 	padding: 0 4px;
-	height: 46px;
 	vertical-align: middle;
 	height: 36px;
 	}
 
 	div.az_glasuvam_hide .azglasuvam_hide {
-		margin-top: 3px;
+		padding-top: 8px;
 		}
 	
 	div.az_glasuvam_hide span.stamp {
@@ -89,6 +88,7 @@ div.az_glasuvam_hide {
 			div.az_glasuvam_hide span.stamp a img {
 				border: 0;
 				vertical-align: middle;
+				margin-top: 5px;
 				}
 	
 	div.az_glasuvam_hide label {
@@ -108,7 +108,8 @@ div.rotator {
 	margin: 0;
 	padding: 0;
 	font-size: 12px;
-	background: white;
+	height: 444px;
+	background: white url(b.png) no-repeat bottom right;
 	}
 
 	.rotator .nav {
@@ -247,76 +248,14 @@ div.rotator {
 
 
 #inject {
-	padding: 10px;;
+	padding: 5px 10px 0px 15px;
 	margin: 0;
 	}
 
-/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
 #loading {
 	height: 66px;
-	background: transparent url(i.gif) no-repeat;
+	background: transparent url(i.gif) no-repeat 10px 0;
 	}
-
-/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
-table.stator {
-	width: 100%;
-	padding: 0;
-	}
-	
-	table.stator td.hide {
-		padding: 0;
-		font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
-		text-align: left;
-		color: #ddd;
-		background: gray ;
-		padding: 0 4px;
-		height: 46px;
-		vertical-align: middle;
-		height: 36px;
-		}
-
-		table.stator td.hide .azglasuvam_hide {
-			margin-top: 3px;
-			}
-		
-		table.stator td.hide span.stamp {
-			padding: 0;
-			margin: 0;
-			float: right;
-			cursor: default;
-			}
-			
-			 table.stator td.hide span.stamp a {
-				color: white;
-				text-decoration: none;
-				}
-			table.stator td.hide span.stamp a:hover {
-				text-decoration: underline;
-				}
-				
-				table.stator td.hide span.stamp a img {
-					border: 0;
-					vertical-align: middle;
-					}
-		
-		table.stator td.hide label {
-			padding: 0;
-			margin: 0;
-			cursor: pointer;
-			font-size: 11px;
-			position: relative;
-			top: -2px;
-			left: 1px;
-			color: #ccc;
-			}
-			
-	table.stator td.rotator {
-		height: 444px;
-		background: white url(b.png) no-repeat bottom right;
-		vertical-align: top;
-		}
 
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
