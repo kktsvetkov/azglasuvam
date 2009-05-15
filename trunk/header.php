@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
 <?php if (is_home()) { ?>
-<script type="text/javascript" src="http://az-glasuvam.com.projects.ibm.kaloyan.info/wp-content/themes/az-glasuvam.com/rotator.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/rotator.js"></script>
 <script type="text/javascript">
 <!--//
 var r_modal = 1;
