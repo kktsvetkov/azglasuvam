@@ -8,16 +8,12 @@ Template Name: &#1056;&#1086;&#1090;&#1072;&#1090;&#1086;&#1088;
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php bloginfo('name'); ?></title>
-
-<link rel='stylesheet' href='<?php echo get_option('home'); ?>/wp-includes/js/thickbox/thickbox.css?ver=20081210' type='text/css' media='all' />
-<script type='text/javascript' src='<?php echo get_option('home'); ?>/wp-includes/js/jquery/jquery.js?ver=1.2.6'></script>
-<script type='text/javascript' src='<?php echo get_option('home'); ?>/wp-includes/js/thickbox/thickbox.js?ver=3.1-20090123'></script>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/rotator.css" type="text/css" media="screen" />
+<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/rotator.js'></script>
+<script type="text/javascript">
+(new Image).src = '<?php bloginfo('stylesheet_directory'); ?>/i.gif';
 
-</head>
-<body class="mission">
-
-	<?php 
+/* <?php /* */
 
 	// where's the root ?
 	//
@@ -36,16 +32,11 @@ Template Name: &#1056;&#1086;&#1090;&#1072;&#1090;&#1086;&#1088;
 			AND `post_type` = 'page'; ";
 	$_p = $wpdb->get_col($sql);
 	shuffle($_p);
-	?>
 
-<script type="text/javascript">
+/* */?> */
 
-/**
-*/
+var r_modal = 1;
 var poslania = [<?php echo join(', ', $_p); ?>];
-
-/**
-*/
 var loading = false;
 
 /**
@@ -70,7 +61,7 @@ function poslanie(where) {
 		target = 1;
 		}
 	jQuery('.rotator .nav span').html(target);
-	jQuery('#inject').html('<div id=\"loading\">loading&hellip;</div>');
+	jQuery('#inject').html('<div id=\"loading\"></div>');
 	
 	jQuery.get('<?php echo get_option('home'); ?>/?page_id=' + poslania[target -1], {},
 		function(html){
@@ -79,28 +70,51 @@ function poslanie(where) {
 			});
 	}
 </script>
+</head>
+<body class="mission">
+
+
 
 	<div class="rotator">
 
-		<div class="nav">
+		<table class="stator" cellspacing="0" cellpadding="0" border="0">
+		<tr><td class="rotator">
 
-			<a onClick="poslanie(+1);" class="next" title="напред">напред</a><a
-				onClick="poslanie(-1);" class="prev" title="назад">назад</a>
-			<span>1</span> от <?php echo count($_p); ?>
+			<div class="nav">
 
-		</div>
+				<a onClick="poslanie(+1);" class="next" title="напред">напред</a><a
+					onClick="poslanie(-1);" class="prev" title="назад">назад</a>
+				<span>1</span> от <?php echo count($_p); ?>
 
-		<div id="inject">
+			</div>
 
-			<!-- <?php /* KT: the opening tag for the HTML
-			comment is going to be closed by the included
-			template -- this is an UTF hack ;) */
+			<div id="inject">
+	
+				<!-- <?php /* KT: the opening tag for the HTML
+				comment is going to be closed by the included
+				template -- this is an UTF hack ;) */
+	
+				$wp_query = new WP_Query('page_id=' . $_p[0]);
+				include TEMPLATEPATH . '/page.poslanie.php';
+				?>
+	
+			</div>
 
-			$wp_query = new WP_Query('page_id=' . $_p[0]);
-			include TEMPLATEPATH . '/page.poslanie.php';
-			?>
+		</td></tr>
+		<tr><td class="hide">
+			<span class="stamp">
+				<a href="http://az-glasuvam.com" target="_top"
+					title="&laquo;Аз Гласувам! Избори 2009&raquo;"><img
+					src="<?php echo bloginfo('stylesheet_directory'); ?>/a.gif" /></a>
+			</span>
 
-		</div>
+			<div class="azglasuvam_hide"><input type="checkbox"
+				onChange="jQuery.cookie('az_glasuvam', this.checked ? 1 : null);"
+				id="azglasuvam_hide"/><label for="azglasuvam_hide">Не
+					желая да виждам повече послания от &quot;Аз Гласувам!&quot;</label>
+			</div>
+		</td></tr>
+		</table>
 
 	</div>
 </body>
