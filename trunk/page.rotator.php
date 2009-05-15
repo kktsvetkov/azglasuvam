@@ -73,49 +73,27 @@ function poslanie(where) {
 </head>
 <body class="mission">
 
-
-
 	<div class="rotator">
 
-		<table class="stator" cellspacing="0" cellpadding="0" border="0">
-		<tr><td class="rotator">
+		<div class="nav">
 
-			<div class="nav">
+			<a onClick="poslanie(+1);" class="next" title="напред">напред</a><a
+				onClick="poslanie(-1);" class="prev" title="назад">назад</a>
+			<span>1</span> от <?php echo count($_p); ?>
 
-				<a onClick="poslanie(+1);" class="next" title="напред">напред</a><a
-					onClick="poslanie(-1);" class="prev" title="назад">назад</a>
-				<span>1</span> от <?php echo count($_p); ?>
+		</div>
 
-			</div>
+		<div id="inject">
 
-			<div id="inject">
-	
-				<!-- <?php /* KT: the opening tag for the HTML
-				comment is going to be closed by the included
-				template -- this is an UTF hack ;) */
-	
-				$wp_query = new WP_Query('page_id=' . $_p[0]);
-				include TEMPLATEPATH . '/page.poslanie.php';
-				?>
-	
-			</div>
+			<!-- <?php /* KT: the opening tag for the HTML
+			comment is going to be closed by the included
+			template -- this is an UTF hack ;) */
 
-		</td></tr>
-		<tr><td class="hide">
-			<span class="stamp">
-				<a href="http://az-glasuvam.com" target="_top"
-					title="&laquo;Аз Гласувам! Избори 2009&raquo;"><img
-					src="<?php echo bloginfo('stylesheet_directory'); ?>/a.gif" /></a>
-			</span>
+			$wp_query = new WP_Query('page_id=' . $_p[0]);
+			include TEMPLATEPATH . '/page.poslanie.php';
+			?>
 
-			<div class="azglasuvam_hide"><input type="checkbox"
-				onChange="jQuery.cookie('az_glasuvam', this.checked ? 1 : null);"
-				id="azglasuvam_hide"/><label for="azglasuvam_hide">Не
-					желая да виждам повече послания от &quot;Аз Гласувам!&quot;</label>
-			</div>
-		</td></tr>
-		</table>
-
+		</div>
 	</div>
 </body>
 </html>
