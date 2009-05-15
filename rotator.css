@@ -210,10 +210,10 @@ div.rotator {
 		clear: both;
 		color: #666;
 		font-size: 15px;
-		line-height: 1.1em;
+		line-height: 1.125em;
 		letter-spacing: -1px;
 		cursor: default;
-		font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+		font-family: Arial, 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
 		}
 	* html .rotator div.caption {
 		border-top: 0;
@@ -229,9 +229,8 @@ div.rotator {
 			margin: 0;
 			display: block;
 			margin-top: 9px;
-			font-size: 10px;
+			font-size: 11px;
 			font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
-			text-transform: uppercase;
 			letter-spacing: 0px;
 			font-weight: bold;
 			color: black;

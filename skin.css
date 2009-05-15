@@ -18,11 +18,13 @@ a img {	border: 0;
 #outter {
 	background: white;
 	padding-top: 10px;
+	text-align: center;
 	}
 #inner {
 	width: 960px;
 	margin: 0 auto;
 	background: white;
+	text-align: left;
 	}
 #void {
 	background: black;
@@ -181,10 +183,16 @@ table.project {
 
 	table.project td {
 		padding: 4em 4em 4em 0;
+		text-align: center;
 		}
 
 	.project img.prochetime {
 		vertical-align: middle;
+		}
+	
+	.project div.quilt {
+		margin: 0 auto 30px;
+		text-align: center;
 		}
 	
 	.project a.poslania {
@@ -199,7 +207,12 @@ table.project {
 		font-size: 9px;
 		line-height: 1000px;
 		overflow: hidden;
-		background: white url(8.png) no-repeat bottom left;
+		background: #3a443a url(8.png) no-repeat left bottom;
+		
+		margin-bottom:-20px;
+		}
+	* html .project a.poslania {
+		background-position: 0 -40px;
 		}
 	.project a.poslania:hover {
 		background-position: top left;
@@ -245,6 +258,9 @@ table.poveche {
 			height: 18px;
 			overflow: hidden;
 			line-height:1000px;
+			}
+		* html table.poveche td h4 {
+			height: 22px;
 			}
 			
 			table.poveche td h4#za_proekta {
@@ -634,4 +650,14 @@ h2.pagetitle {
 	color:white;
 	font-family: Georgia;
 	letter-spacing: -1px;
+	}
+	
+.two-columns div.all {
+	height: auto;
+	background: white;
+	margin-bottom: 25px;
+	clear: all;
+	border-top: solid 1px silver;
+	margin-top: 15px;
+	padding-top: 15px;
 	}
