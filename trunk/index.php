@@ -4,51 +4,11 @@
 		<table class="project" border="0">
 			<tr>
 			<th><img class="prochetime" alt="" src="<?php bloginfo('stylesheet_directory'); ?>/1.gif"/></th>
-			<td><a class="poslania" href="#vsichki-poslania">вижте защо е важно да се гласува</a></td>
+			<td>
+			<div class="quilt"><img alt="" src="<?php bloginfo('stylesheet_directory'); ?>/0.png"/></div>
+			<a class="poslania" href="#vsichki-poslania">вижте защо е важно да се гласува</a></td>
 			</tr>
 		</table>
-
-
-		<div id="rotator">
-		<div class="rotator">
-
-			<div class="nav">
-				<a href="#" class="next" title="напред">напред</a><a href="#" class="prev" title="назад">назад</a>
-				4 от 32
-			</div>
-
-			<div class="author">
-				<img src="http://farm4.static.flickr.com/3332/3446576593_231830e430_b.jpg?rand=733297494"
-					alt="Калоян К. Цветков" class="avatar"/>
-				<h2>Калоян К. Цветков</h2>
-				<div class="details">уеб архитект, 30 години (Русе)</div>
-				<a href="#" class="blog">Kaloyan.info</a>
-			</div>
-			
-			<div class="caption">
-Здравейте, <br />
-възможно ли е подсписване на NDA и за резюмето, което ще ви изпратя? От прес съобщението останах с впечетлението, че всичката разменена информация между двете страни остава конфиденциална - цитирам:  <br />
- <br />
-"Конфиденциалността на споделената информация ще бъде защитена чрез подписване на Споразумение за Неразкриване (NDA), предложено от Вас, или по наш стандартен образец."  <br />
- <br />
-Ще се радвам на вашия коментар.  <br />
- <br />
-Поздрави, Калоян
-			
-			<a class="more" href="#">Прочетете повече от статията на Калоян &quot;За изборите&hellip;&quot;</a>
-			</div>
-
-			<div class="hide">
-				<span class="stamp">
-				<b>&laquo;Аз Гласувам! Избори 2009&raquo;</b> &mdash; научете повече на <a href="http://az-glasuvam.com">Az-glasuvam.com</a>
-				</span>
-				<input type="checkbox" id="azglasuvam_hide"/><label
-					for="azglasuvam_hide">Не желая да виждам повече послания от &quot;Аз Гласувам!&quot;</label>
-			</div>
-
-		</div>
-		</div>
-		
 
 		<table cellspacing="0" class="poveche" >
 			<tr>

@@ -300,6 +300,34 @@ Class az_glasuvam {
 
 	// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 
+	/**
+	* Get a shuffled list of the IDs of the "poslaniya" pages
+	*/
+	Function poslania() {
+
+		global $wpdb;
+
+		// where's the root ?
+		//
+		$sql = "SELECT `post_parent` FROM `{$wpdb->posts}`
+			INNER JOIN `{$wpdb->postmeta}`
+				ON `{$wpdb->postmeta}`.`post_id` = `{$wpdb->posts}`.`ID`
+			WHERE `meta_key` = '_wp_page_template'
+				AND `meta_value` = 'page.poslanie.php'
+			LIMIT 0, 1 ";
+		$_root = $wpdb->get_var($sql);
+	
+		// find all the messages
+		//
+		$sql = "SELECT `ID` FROM `{$wpdb->posts}`
+			WHERE `post_parent` = $_root
+				AND `post_type` = 'page'; ";
+		$_p = $wpdb->get_col($sql);
+		shuffle($_p);
+
+		return $_p;
+		}
+
 	////--end-of-class
 	}
 

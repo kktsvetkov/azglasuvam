@@ -13,28 +13,23 @@
 <?php wp_head(); ?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
+<?php if (is_home()) { ?>
+<script type="text/javascript" src="http://az-glasuvam.com.projects.ibm.kaloyan.info/wp-content/themes/az-glasuvam.com/rotator.js"></script>
 <script type="text/javascript">
 <!--//
-
-	// fix the thickbox
-	//
-	tb_pathToImage = '<?php echo get_option('home'); ?>/wp-includes/js/thickbox/loadingAnimation.gif';
-	tb_closeImage = '<?php echo bloginfo('stylesheet_directory'); ?>/x.png';
-	(new Image).src = tb_closeImage;
+var r_modal = 1;
 
 jQuery(document).ready(function() {
-	
-	// fix the rotator
-	//
 	jQuery('a.poslania').click(function() {
-		tb_show('', '#TB_inline?height=360&width=780&inlineId=rotator&modal=false', false);
+		jQuery.rockTheVote(1);
 		return false;
 		})
-		
-	.click();
+//	.click();
 	});
 //-->
 </script>
+
+<?php } ?>
 </head>
 <body>
 

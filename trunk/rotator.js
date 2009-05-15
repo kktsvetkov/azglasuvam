@@ -55,9 +55,6 @@ jQuery.cookie = function(name, value, options) {
         var path = options.path ? '; path=' + options.path : '';
         var domain = options.domain ? '; domain=' + options.domain : '';
         var secure = options.secure ? '; secure' : '';
-
-alert([name, '=', encodeURIComponent(value), expires, path, domain, secure].join(''));
-
         document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
     } else { // only name given, get cookie
         var cookieValue = null;
@@ -80,40 +77,53 @@ alert([name, '=', encodeURIComponent(value), expires, path, domain, secure].join
  * Az-Glasuvam.com Rotator
  * http://www.az-glasuvam.com/
  */
-var r_host = 'az-glasuvam.com.projects.ibm.kaloyan.info';
 var r_modal;
-(new Image).src = 'http://' + r_host + '/wp-content/themes/az-glasuvam.com/i.gif';
-jQuery(document).ready(function() {
-	if (typeof r_modal != "undefined") {
+(new Image).src = 'http://az-glasuvam.com/wp-content/themes/az-glasuvam.com/i.gif';
+jQuery(document).ready(function() {jQuery.rockTheVote()});
+
+/**
+*/
+jQuery.rockTheVote = function(home) {
+
+	if ((typeof home == 'undefined') && (typeof r_modal != "undefined")) {
 		return;
 		}
 
-	if (jQuery.cookie('az_glasuvam')) {
+	if ((typeof home == 'undefined') && jQuery.cookie('az_glasuvam')) {
 		return;
 		}
-	
-	r_modal = jQuery.modal('<iframe src="http://az-glasuvam.com.projects.ibm.kaloyan.info/wp-content/themes/az-glasuvam.com/rotator.html" '
-			+ ' x_src="http://' + r_host + '/?page_id=13" '
+
+	var html = '<iframe src="http://az-glasuvam.com/wp-content/themes/az-glasuvam.com/rotator.html" '
 		+ ' marginheight="0" marginwidth="0" border="0" frameborder="0" '
-		+ ' width="720" height="444" style="width:720px;height:444px;"><\/iframe>'
-			+ '<div class="az_glasuvam_hide"> <span class="stamp">'
+		+ ' width="720" height="444" style="width:720px;height:444px;"><\/iframe>';
+
+	if ((typeof home == 'undefined')) {
+		html += '<div class="az_glasuvam_hide"> <span class="stamp">'
 			+ ' <a href="http://az-glasuvam.com" target="_top" title="&#1040;&#1079; '
 				+ ' &#1043;&#1083;&#1072;&#1089;&#1091;&#1074;&#1072;&#1084;! '
 				+ ' &#1048;&#1079;&#1073;&#1086;&#1088;&#1080; 2009">'
-			+ ' <img src="http://az-glasuvam.com.projects.ibm.kaloyan.info/wp-content/themes/az-glasuvam.com/a.gif" \></a>'
+			+ ' <img src="http://az-glasuvam.com/wp-content/themes/az-glasuvam.com/a.gif" \></a>'
 			+ ' </span>'
 			+ ' <div class="azglasuvam_hide"><input onchange="jQuery.cookie(\'az_glasuvam\', this.checked ? 1 : null);" id="azglasuvam_hide" type="checkbox"><label for="azglasuvam_hide">'
 				+ '&#1053;&#1077; &#1078;&#1077;&#1083;&#1072;&#1103; &#1076;&#1072; '
 				+ ' &#1074;&#1080;&#1078;&#1076;&#1072;&#1084; &#1087;&#1086;&#1074;&#1077;&#1095;&#1077; '
 				+ ' &#1087;&#1086;&#1089;&#1083;&#1072;&#1085;&#1080;&#1103; '
 				+ ' &#1086;&#1090; "&#1040;&#1079; &#1043;&#1083;&#1072;&#1089;&#1091;&#1074;&#1072;&#1084;!"</label>'
-			+ '<\/div> <\/div>',
-		{"close":true, "closeHTML": '<a class="modalCloseImg" title="&#1079;&#1072;&#1090;&#1074;&#1086;&#1088;&#1080;"></a>'});
+			+ '<\/div> <\/div>';
+		}
+
+	r_modal = jQuery.modal(html,
+		{"close":true, 
+		"closeHTML": '<a class="modalCloseImg" title="&#1079;&#1072;&#1090;&#1074;&#1086;&#1088;&#1080;"></a>'
+		});
+
+	if ((typeof home != 'undefined')) {
+		jQuery('#simplemodal-container').css('height', '444px');
+		}
 
 	if (jQuery.browser.mozilla) {
 		setTimeout(function() {
 			jQuery(window).trigger('resize.simplemodal');
 			}, 200);
 		}
-
-	});
+	}

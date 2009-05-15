@@ -15,23 +15,8 @@ Template Name: &#1056;&#1086;&#1090;&#1072;&#1090;&#1086;&#1088;
 
 /* <?php /* */
 
-	// where's the root ?
-	//
-	$sql = "SELECT `post_parent` FROM `{$wpdb->posts}`
-		INNER JOIN `{$wpdb->postmeta}`
-			ON `{$wpdb->postmeta}`.`post_id` = `{$wpdb->posts}`.`ID`
-		WHERE `meta_key` = '_wp_page_template'
-			AND `meta_value` = 'page.poslanie.php'
-		LIMIT 0, 1 ";
-	$_root = $wpdb->get_var($sql);
-
-	// find all the messages
-	//
-	$sql = "SELECT `ID` FROM `{$wpdb->posts}`
-		WHERE `post_parent` = $_root
-			AND `post_type` = 'page'; ";
-	$_p = $wpdb->get_col($sql);
-	shuffle($_p);
+	global $az_glasuvam;
+	$_p = $az_glasuvam->poslania();
 
 /* */?> */
 
