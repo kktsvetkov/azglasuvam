@@ -55,9 +55,9 @@
 				<td class="first">
 					<h4 id="za_proekta">За проекта</h4>
 					<p>
-					Celta na proekta e da nasyrchi glasuwaneto na predstoiaschtite
-					izobori za evroparlament i za nacionalen parlament. Do momenta
-					ima sybrani 32 poslania...
+					Научете повече за идеите и целите на проекта за
+					насърчаване на гласуването на предстоящите
+					парламентарни избори и избори за европейски парламент.
 					</p>
 					<ul>
 						<li><a href="#">научете повече&hellip;</a></li>

@@ -4,10 +4,10 @@
 	<div id="footer">
 
 		<ul class="top">
-			<li><a href="#">Начало</a></li>
-			<li><a href="#">За проекта</a></li>
+			<li><a href="<?php echo get_option('home'); ?>/">Начало</a></li>
+			<li><a href="/za-proekta/">За проекта</a></li>
 			<li><a href="/blog/">Блог</a></li>
-			<li><a href="#">Twitter</a></li>
+			<li><a href="http://twitter.com/azglasuvam">Twitter</a></li>
 			<li><a href="#">Facebook</a></li>
 		</ul>
 
@@ -26,10 +26,10 @@
 		</p>
 
 		<ul class="middle">
-			<li><a href="#">Всички послания</a></li>
+			<li><a href="/poslaniya/">Всички послания</a></li>
 			<li><a href="#">Банери + Значки</a></li>
 			<li><a href="#">Разпространи посланията</a></li>
-			<li><a href="#">Изпрати послание</a></li>
+			<li><a href="/napishi-poslanie/">Изпрати послание</a></li>
 		</ul>
 		
 		<ul class="bottom">

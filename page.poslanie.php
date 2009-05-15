@@ -38,13 +38,4 @@ Template Name: &#1055;&#1086;&#1089;&#1083;&#1072;&#1085;&#1080;&#1077;
 	<?php } ?>
 	</div>
 
-	<div class="hide">
-		<span class="stamp">
-			<b>&laquo;Аз Гласувам! Избори 2009&raquo;</b> &mdash; научете
-				повече на <a href="http://az-glasuvam.com">Az-glasuvam.com</a>
-		</span>
-		<input type="checkbox" id="azglasuvam_hide"/><label
-			for="azglasuvam_hide">Не желая да виждам повече послания от &quot;Аз Гласувам!&quot;</label>
-	</div>
-
 <?php endwhile;

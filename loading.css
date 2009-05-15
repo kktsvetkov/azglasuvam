@@ -1,0 +1,17 @@
+body.loading {
+	padding: 0;
+	margin: 0;
+	background: white url(i.gif) no-repeat center center;
+	}
+	
+.loading div.loading {
+	height: 474px;
+	/* width: 714px; */
+	line-height:470px;
+	text-align: center;
+	background: url(l.gif) no-repeat center center;
+	}
+	
+.loading div.loading img {
+	vertical-align: middle;
+	}
