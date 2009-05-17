@@ -30,7 +30,7 @@
 		<ul class="middle">
 			<li><a href="/poslaniya/">Всички послания</a></li>
 			<li><a href="/baneri/">Банери + Значки</a></li>
-			<li><a href="#">Разпространи посланията</a></li>
+			<li><a href="/razprostrani-poslaniyata/">Разпространи посланията</a></li>
 			<li><a href="/napishi-poslanie/">Изпрати послание</a></li>
 		</ul>
 		
