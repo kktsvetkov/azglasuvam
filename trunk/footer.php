@@ -7,8 +7,10 @@
 			<li><a href="<?php echo get_option('home'); ?>/">Начало</a></li>
 			<li><a href="/za-proekta/">За проекта</a></li>
 			<li><a href="/blog/">Блог</a></li>
-			<li><a href="http://twitter.com/azglasuvam">Twitter</a></li>
-			<li><a href="http://www.facebook.com/pages/Az-Glasuvam/95123228487">Facebook</a></li>
+			<li><a target="_blank" href="http://twitter.com/azglasuvam">Twitter</a></li>
+			<li><a target="_blank" href="http://www.facebook.com/pages/Az-Glasuvam/95123228487">Facebook</a></li>
+			<li><a target="_blank" href="http://bulgariaenasha.blogspot.com/">България е наша!</a></li>
+			
 		</ul>
 
 		<p class="copyright">
