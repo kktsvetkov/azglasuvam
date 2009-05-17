@@ -3,7 +3,8 @@
 
 		<table class="project" border="0">
 			<tr>
-			<th><img class="prochetime" alt="" src="<?php bloginfo('stylesheet_directory'); ?>/1.gif"/></th>
+			<th><img class="prochetime" alt="" src="<?php bloginfo('stylesheet_directory'); ?>/<?php
+				$_ = range(2,2); shuffle($_); echo $_[0];?>.gif"/></th>
 			<td>
 			<div class="quilt"><img alt="" src="<?php bloginfo('stylesheet_directory'); ?>/0.png"/></div>
 			<a class="poslania" href="#vsichki-poslania">вижте защо е важно да се гласува</a></td>
@@ -37,6 +38,22 @@
 						<li><a href="http://izbori2009.eu/">Izbori2009.eu</a></li>
 						
 					</ul>
+
+					<br />
+					<p>
+					Разгледайте и останалите Facebook групи, клаузи и страници, свързани с предстоящите избори:
+					</p>
+					<ul class="normal">
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=49693522521">България е наша!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/pages/Izbori-2009/92674287944">Избори 2009</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=35856346796">Аз ще гласувам!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=55856583982">Гласувай за България!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=45234504829">Граждански кураж!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=61202997957">България е наша!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=79826986589">Европейски избори – ТИ РЕШАВАШ!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/pages/Bunta-na-bezglasnite/42486212851?ref=s">Бунта на безгласните</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/pages/Izbori-2009/95498449965">Избори 2009!</a></li>
+					</ul>
 					
 				</td>
 				<td>
@@ -56,16 +73,16 @@
 						<li><a href="/razprostrani-poslaniyata/#WordPress">WordPress плъгин</a></li>
 					</ul>
 
-					<h5>Сложете банер или значка на вашия сайт</h5>
+					<h5>Сложете банер <!--или значка--> на вашия сайт</h5>
 					<p>
 					Вие може да помогнете на проекта да популяризира идята за
 					гласуване на предстоящите избори като да поставите банер
-					или значка на вашия сайт.
+					<!--или значка--> на вашия сайт.
 					</p>
 					<ul>
-						<li><a href="#">научете повече&hellip;</a></li>
-						<li><a href="#">Галерия с банери</a></li>
-						<li><a href="#">Галерия със значки</a></li>
+						<li><a href="/baneri/">научете повече&hellip;</a></li>
+						<li><a href="/baneri/#baneri">Галерия с банери</a></li>
+						<!-- li><a href="/baneri/#znachki">Галерия със значки</a></li -->
 					</ul>
 					
 					<h5>Сложете връзка към нашия проект на вашия сайт</h5>
@@ -75,7 +92,7 @@
 					към нашия проект на вашия сайт.
 					</p>
 					<ul>
-						<li><a href="#">научете повече&hellip;</a></li>
+						<li><a href="/baneri/#linkove">научете повече&hellip;</a></li>
 					</ul>
 
 				</td>
@@ -111,8 +128,9 @@
 					заповядайте в нашата Facebook група:
 					</p>
 					<ul class="normal">
-						<li><a href="#">Az-Glasuvam.com</a></li>
+						<li><a href="http://www.facebook.com/pages/Az-Glasuvam/95123228487">Аз Гласувам!</a></li>
 					</ul>
+					<?php /*
 					<p>
 					Разгледайте и останалите Facebook групи, клаузи и страници, свързани с предстоящите избори:
 					</p>
@@ -127,6 +145,7 @@
 						<li><a target="_blank" href="http://www.facebook.com/pages/Bunta-na-bezglasnite/42486212851?ref=s">Бунта на безгласните</a></li>
 						<li><a target="_blank" href="http://www.facebook.com/pages/Izbori-2009/95498449965">Избори 2009!</a></li>
 					</ul>
+					*/ ?>
 				</td>
 			</tr>
 		</table>
