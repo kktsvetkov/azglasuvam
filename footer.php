@@ -8,7 +8,7 @@
 			<li><a href="/za-proekta/">За проекта</a></li>
 			<li><a href="/blog/">Блог</a></li>
 			<li><a href="http://twitter.com/azglasuvam">Twitter</a></li>
-			<li><a href="#">Facebook</a></li>
+			<li><a href="http://www.facebook.com/pages/Az-Glasuvam/95123228487">Facebook</a></li>
 		</ul>
 
 		<p class="copyright">
@@ -27,7 +27,7 @@
 
 		<ul class="middle">
 			<li><a href="/poslaniya/">Всички послания</a></li>
-			<li><a href="#">Банери + Значки</a></li>
+			<li><a href="/baneri/">Банери + Значки</a></li>
 			<li><a href="#">Разпространи посланията</a></li>
 			<li><a href="/napishi-poslanie/">Изпрати послание</a></li>
 		</ul>

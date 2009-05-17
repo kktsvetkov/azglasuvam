@@ -20,8 +20,8 @@
 					парламентарни избори и избори за европейски парламент.
 					</p>
 					<ul>
-						<li><a href="#">научете повече&hellip;</a></li>
-						<li><a href="#">вижте всички послания</a></li>
+						<li><a href="/za-proekta/">научете повече&hellip;</a></li>
+						<li><a href="/poslaniya/">вижте всички послания</a></li>
 						<li><a href="/blog/">разгледайте блога</a></li>
 					</ul>
 					
@@ -51,9 +51,9 @@
 					с посланията ("въртележката" по-горе) на вашия сайт.
 					</p>
 					<ul>
-						<li><a href="#">научете повече&hellip;</a></li>
-						<li><a href="#">HTML код</a></li>
-						<li><a href="#">WordPress плъгин</a></li>
+						<li><a href="/razprostrani-poslaniyata/">научете повече&hellip;</a></li>
+						<li><a href="/razprostrani-poslaniyata/#HTML">HTML код</a></li>
+						<li><a href="/razprostrani-poslaniyata/#WordPress">WordPress плъгин</a></li>
 					</ul>
 
 					<h5>Сложете банер или значка на вашия сайт</h5>
@@ -82,14 +82,14 @@
 				<td class="proportsionalen">
 					<h4 id="uchastvajte_v_proekta">Участвайте в проекта!</h4>
 					<p>
-					Proektyt e otvoren za wsichki koito sa syprichastni i iskat da pomognat.
-					Eto niakolko nachina po kojto moje da go naprawite
+					Проектът е отворен за всички, които са споделят идеята на проекта и искат да помогнат.
+					Ето няколко начина по които може да го направите:
 					</p>
 
 					<h5>Напишете послание</h5>
 					<p>
-					Ako jelaeta da spodelite vaschata motivacia za glasuwaneto na predstoiaschtite izbori,
-					i zaschto go smiatate za wajno, nie schte se radwame da publikuwame waschite poslenia.
+					Ако желаете да споделите вашата мотивация за гласуването на предстоящите избори,
+					и защо го смятате за важно, ние ще се радваме да публикуваме вашите послания.
 					</p>
 					<ul>
 						<li><a href="#">научете повече&hellip;</a></li>
@@ -97,8 +97,8 @@
 					
 					<h5>Направете банер или значка</h5>
 					<p>
-					Edna kartina e po-silna ot 100 dumi: ako jelate da pomognete na proekta schte se
-					radwame da ni izpratite waschite baneri i znachki.
+					Една картина е по-силна от 100 думи: ако желаете да помогнете на проекта ще се
+					радваме да ни изпратите вашите банери и значки.
 					</p>
 					<ul>
 						<li><a href="#">научете повече&hellip;</a></li>
@@ -114,10 +114,18 @@
 						<li><a href="#">Az-Glasuvam.com</a></li>
 					</ul>
 					<p>
-					Razgledajte i ostanalite Facebook grupi, klauzi i stranici swarzani s predstoiaschtite izbori:
+					Разгледайте и останалите Facebook групи, клаузи и страници, свързани с предстоящите избори:
 					</p>
 					<ul class="normal">
-						<li><a href="#">haide da glasuwame</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=49693522521">България е наша!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/pages/Izbori-2009/92674287944">Избори 2009</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=35856346796">Аз ще гласувам!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=55856583982">Гласувай за България!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=45234504829">Граждански кураж!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=61202997957">България е наша!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/group.php?gid=79826986589">Европейски избори – ТИ РЕШАВАШ!</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/pages/Bunta-na-bezglasnite/42486212851?ref=s">Бунта на безгласните</a></li>
+						<li><a target="_blank" href="http://www.facebook.com/pages/Izbori-2009/95498449965">Избори 2009!</a></li>
 					</ul>
 				</td>
 			</tr>
