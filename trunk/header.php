@@ -28,7 +28,8 @@ jQuery(document).ready(function() {
 	});
 //-->
 </script>
-
+<?php } else { ?>
+<script type="text/javascript" src="<?php echo get_option('home'); ?>/wp-includes/js/jquery/jquery.js"></script>
 <?php } ?>
 </head>
 <body>
