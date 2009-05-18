@@ -2,6 +2,7 @@
 Template Name: &#1056;&#1086;&#1090;&#1072;&#1090;&#1086;&#1088;
 */
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 
@@ -9,7 +10,8 @@ Template Name: &#1056;&#1086;&#1090;&#1072;&#1090;&#1086;&#1088;
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php bloginfo('name'); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/rotator.css" type="text/css" media="screen" />
-<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/rotator.js'></script>
+<script type="text/javascript" src="<?php echo get_option('home'); ?>/wp-includes/js/jquery/jquery.js"></script>
+
 <script type="text/javascript">
 (new Image).src = '<?php bloginfo('stylesheet_directory'); ?>/i.gif';
 
@@ -24,10 +26,13 @@ var r_modal = 1;
 var poslania = [<?php echo join(', ', $_p); ?>];
 var loading = false;
 
+</script>
+
+<script type="text/javascript">
+
 /**
 */
 function poslanie(where) {
-
 	// already loading ?
 	//
 	if (loading) {
@@ -46,14 +51,15 @@ function poslanie(where) {
 		target = 1;
 		}
 	jQuery('.rotator .nav span').html(target);
-	jQuery('#inject').html('<div id=\"loading\"></div>');
-	
-	jQuery.get('<?php echo get_option('home'); ?>/?page_id=' + poslania[target -1], {},
+	jQuery('#inject').html('<div id="loading"><\/div>');	
+
+	jQuery.get('<?php echo get_option('home'); ?>\/?page_id=' + poslania[target -1], {},
 		function(html){
-			jQuery('#inject').html('<!-- ' + html);
+			jQuery('#inject').html('<' + '!-- ' + html);
 			loading = false;
-			});
+			});	
 	}
+
 </script>
 </head>
 <body class="mission">
