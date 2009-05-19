@@ -7,8 +7,8 @@
 			<p>Научете повече за идеите и целите на проекта за насърчаване на гласуването на предстоящите парламентарни избори и избори за европейски парламент.</p>
 
 			<ul>
-				<li><a href="#">научете повече&hellip;</a></li>
-				<li><a href="#">вижте всички послания</a></li>
+				<li><a href="/za-proekta/">научете повече&hellip;</a></li>
+				<li><a href="/poslaniya/">вижте всички послания</a></li>
 				<li><a href="/blog/">разгледайте блога</a></li>
 			</ul>
 
@@ -24,11 +24,11 @@
 			публикувате връзка към "Аз Гласувам!".</p>
 
 			<ul>
-				<li><a href="#">HTML код за посланията</a></li>
-				<li><a href="#">WordPress плъгин за посланията</a></li>
-				<li><a href="#">галерия с банери</a></li>
-				<li><a href="#">галерия със значки</a></li>
-				<li><a href="#">научете повече&hellip;</a></li>
+				<li><a href="/razprostrani-poslaniyata/#HTML">HTML код за посланията</a></li>
+				<li><a href="/razprostrani-poslaniyata/#WordPress">WordPress плъгин за посланията</a></li>
+				<li><a href="/baneri/#baneri">галерия с банери</a></li>
+				<!-- li><a href="#">галерия със значки</a></li -->
+				<li><a href="/razprostrani-poslaniyata/">научете повече&hellip;</a></li>
 			</ul>
 		</div>
 		
@@ -40,13 +40,12 @@
 			</p>
 
 			<ul>
-				<li><a href="#">напишете послание</a></li>
-				<li><a href="#">направете банер или значка</a></li>
-				<li><a href="#">споделете вашето мнение</a></li>
-				<li><a href="#">участвайте в "България е наша"</a></li>
-				<li><a href="#">участвайте в "Аз ще гласувам!"</a></li>
-				<li><a href="#">участвайте в "..."</a></li>
-				<li><a href="#">научете повече&hellip;</a></li>
+				<li><a href="/napishi-poslanie/">напишете послание</a></li>
+				<li><a href="/napravi-baner/">направете банер или значка</a></li>
+				<li><a href="http://www.facebook.com/pages/Az-Glasuvam/95123228487">споделете вашето мнение</a></li>
+				<li><a href="http://www.facebook.com/group.php?gid=61202997957">участвайте в "България е наша"</a></li>
+				<li><a href="http://www.facebook.com/group.php?gid=35856346796">участвайте в "Аз ще гласувам!"</a></li>
+				<li><a href="http://www.facebook.com/group.php?gid=55856583982">участвайте в "Гласувай за България"</a></li>
 			</ul>
 		</div>
 		
