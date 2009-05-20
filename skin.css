@@ -160,6 +160,15 @@ a img {	border: 0;
 			#footer ul.bottom li a:hover {
 				color: #666;
 				}
+				
+			#footer ul.bottom li.first a img {
+				vertical-align:middle;
+				margin-bottom: 3px;
+				}
+				
+			* html #footer ul.bottom li.first a img {
+				margin-bottom: 0px;
+				}
 
 /* content */
 #content {
@@ -666,7 +675,7 @@ textarea.html {
 	border-width: 1px;
 	background: black none repeat scroll 0% 0%;
 	overflow: scroll;
-	width: 98%;
+	width: 670px;
 	height: 70px;
 	font-family: 'Lucida Console','Courier New';
 	color: white;
@@ -677,7 +686,7 @@ div.banner {
 	background: khaki;
 	text-align: center;
 	margin-bottom: 10px;
-	width: 98%;
+	width: 670px;
 	}
 	
 	div.banner a:hover {

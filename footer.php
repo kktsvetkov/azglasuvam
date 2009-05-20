@@ -35,7 +35,9 @@
 		</ul>
 		
 		<ul class="bottom">
-			<li class="first"><a href="#">Аз Гласувам!</a> e проект на <a href="#">Калоян К. Цветков</a></li>
+			<li class="first"><a href="http://az-glasuvam.com" title="Аз Гласувам!"><img
+				src="<?php bloginfo('stylesheet_directory'); ?>/9.png" alt="Аз Гласувам!"/></a>
+				e проект на <a href="http://kaloyan.info/">Калоян К. Цветков</a></li>
 			<li><a title="Изграден благодарение на WordPress" href="http://wordpress.org/">WordPress <?php echo $wp_version; ?></a></li>
 			<li>Версия <?php echo $GLOBALS['az_glasuvam']->version; ?></li>
 		</ul>
