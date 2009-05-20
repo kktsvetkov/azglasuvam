@@ -661,3 +661,31 @@ h2.pagetitle {
 	margin-top: 15px;
 	padding-top: 15px;
 	}
+
+textarea.html {
+	border-width: 1px;
+	background: black none repeat scroll 0% 0%;
+	overflow: scroll;
+	width: 98%;
+	height: 70px;
+	font-family: 'Lucida Console','Courier New';
+	color: white;
+	font-size: 11px;
+	}
+div.banner {
+	overflow: auto;
+	background: khaki;
+	text-align: center;
+	margin-bottom: 10px;
+	width: 98%;
+	}
+	
+	div.banner a:hover {
+		background: transparent;
+		}
+	
+	div.banner a img {
+		border: solid 1px black;
+		margin: 10px;
+		background: white;
+		}
