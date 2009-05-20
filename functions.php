@@ -65,6 +65,7 @@ Class az_glasuvam {
 		add_shortcode('avtor', array($this, 'shortcode_avtor'));
 		add_shortcode('blog', array($this, 'shortcode_blog'));
 		add_shortcode('original', array($this, 'shortcode_original'));
+		add_shortcode('baneri', array($this, 'shortcode_baneri'));
 		} 
 
 	/**
@@ -109,6 +110,14 @@ Class az_glasuvam {
 		global $post;
 		$post->original_title = trim($content);
 		$post->original_url = $args['url'];
+		}
+
+	// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+	/**
+	*/
+	Function shortcode_baneri() {
+		return require(TEMPLATEPATH . '/php/baneri.php');
 		}
 
 	// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 

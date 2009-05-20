@@ -4,7 +4,7 @@
 		<table class="project" border="0">
 			<tr>
 			<th><img class="prochetime" alt="" src="<?php bloginfo('stylesheet_directory'); ?>/<?php
-				$_ = range(2,2); shuffle($_); echo $_[0];?>.gif"/></th>
+				$_ = range(1,2); shuffle($_); echo $_[0];?>.gif"/></th>
 			<td>
 			<div class="quilt"><img alt="" src="<?php bloginfo('stylesheet_directory'); ?>/0.png"/></div>
 			<a class="poslania" href="#vsichki-poslania">вижте защо е важно да се гласува</a></td>
