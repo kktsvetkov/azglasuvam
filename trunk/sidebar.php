@@ -54,6 +54,7 @@
 			<p>Ако желаете да следите какво става използвайте следните варианти:</p>
 			<ul class="blog">
 				<li><a href="http://favit.bg/groups/v/izbori-2009/">Избори 2009 @ Favit</a></li>
+				<li><a href="http://svejo.net/home/channel/izbori_2009">Избори 2009 @ Svejo.net</a></li>
 				<li><a href="http://is.gd/wRI3">Twitter #izbori2009</a></li>
 				<li><a href="http://is.gd/wRJ0">Edno23 #izbori2009</a></li>
 				<li><a href="http://izbori.biz/">Избори 2009 | izbori.biz</a></li>

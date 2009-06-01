@@ -33,7 +33,7 @@ Class az_glasuvam {
 	* The current version of the theme (it
 	* is used for triggering the upgrades)
 	*/
-	var $version = '0.5.4';
+	var $version = '0.5.6';
 
 	/**
 	* Constructor
